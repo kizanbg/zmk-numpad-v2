@@ -1,0 +1,5 @@
+/ {
+    chosen {
+        zmk,keyboard-name = "numpad";
+    };
+};
