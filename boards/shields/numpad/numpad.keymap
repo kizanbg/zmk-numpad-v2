@@ -2,14 +2,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    behaviors {
-        my_encoder: my_encoder {
-            compatible = "zmk,behavior-sensor-rotate-key-press";
-            #binding-cells = <2>;
-            #sensor-binding-cells = <0>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -20,7 +12,7 @@
                 &kp N0 &kp N0 &kp N0 &kp N0 &kp N0
             >;
 
-            sensor-bindings = <&my_encoder C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
     };
 };
