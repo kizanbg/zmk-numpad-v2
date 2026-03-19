@@ -6,6 +6,7 @@
         my_encoder: my_encoder {
             compatible = "zmk,behavior-sensor-rotate-key-press";
             #binding-cells = <2>;
+            #sensor-binding-cells = <0>;
         };
     };
 
